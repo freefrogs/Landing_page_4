@@ -1,0 +1,33 @@
+/*--GENERAL--*/
+/*--NAVBAR--*/
+.navbar {
+  max-width: 1600px;
+  margin: 0 auto; }
+  @media (max-width: 1200px) {
+    .navbar {
+      justify-content: flex-start; } }
+  .navbar .navbar-brand {
+    width: 30%; }
+    @media (max-width: 1200px) {
+      .navbar .navbar-brand {
+        margin-left: 2%; } }
+    .navbar .navbar-brand .logo_box {
+      position: relative;
+      transition: .5s; }
+      .navbar .navbar-brand .logo_box .company {
+        position: absolute;
+        font-family: Gulim;
+        font-weight: bold;
+        top: 40%;
+        left: 5%;
+        transition: .5s; }
+      .navbar .navbar-brand .logo_box .logo {
+        width: 20%;
+        border-radius: 50%;
+        transition: .5s; }
+      .navbar .navbar-brand .logo_box:hover .company {
+        font-size: 1.8rem; }
+      .navbar .navbar-brand .logo_box:hover .logo {
+        box-shadow: 0 0 10px 5px #fff; }
+
+/*# sourceMappingURL=style.css.map */

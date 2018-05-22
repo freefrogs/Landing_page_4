@@ -1,0 +1,45 @@
+/*--GENERAL--*/
+$white: #fff;
+$info_blue: #17a2b8;
+
+/*--NAVBAR--*/
+.navbar {
+	max-width: 1600px;
+	margin: 0 auto;
+	@media (max-width: 1200px) {
+	justify-content: flex-start;
+	}
+	.navbar-brand {
+	width: 30%;
+	@media (max-width: 1200px) {
+		margin-left: 2%;
+	}
+		.logo_box {
+			position: relative;
+			transition: .5s;
+			.company {
+				position: absolute;
+				font-family: Gulim;
+				font-weight: bold;
+				top: 40%;
+				left: 5%;
+				transition: .5s;
+			}
+			.logo {
+				width: 20%;
+				border-radius: 50%;
+				transition: .5s;
+			}
+			&:hover .company {
+				font-size: 1.8rem;
+			}
+			&:hover .logo {
+				box-shadow: 0 0 10px 5px $white;
+			}
+		}
+	}
+}
+
+
+
+

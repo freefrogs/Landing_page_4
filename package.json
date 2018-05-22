@@ -1,5 +1,5 @@
 {
-  "name": "PORTFOLIO_4",
+  "name": "PORTFOLIO_5",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -31,9 +31,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/freefrogs/PORTFOLIO_4/issues"
+    "url": "https://github.com/freefrogs/PORTFOLIO_5/issues"
   },
-  "homepage": "https://github.com/freefrogs/PORTFOLIO_4#readme",
+  "homepage": "https://github.com/freefrogs/PORTFOLIO_5#readme",
   "dependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.19.0",
