@@ -5,6 +5,36 @@
     background-color: #212529;
     border-color: #212529; }
 
+h2 {
+  padding: 1%;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center;
+  letter-spacing: 2px; }
+
+section {
+  max-width: 1600px;
+  margin: 0 auto; }
+
+::-webkit-scrollbar {
+  width: 15px; }
+
+::-webkit-scrollbar-track {
+  background: #212529; }
+
+::-webkit-scrollbar-thumb {
+  background: #05333a; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #17a2b8; }
+
+/* --CLEARFIX-- */
+.row::before,
+.row::after {
+  content: "";
+  display: table;
+  clear: both; }
+
 /*--NAVBAR--*/
 .navbar {
   max-width: 1600px;
@@ -67,5 +97,42 @@
   .carousel .w-100 {
     height: 80vh;
     object-fit: cover; }
+
+/*--ABOUT US--*/
+.aboutUS {
+  background: #212529;
+  padding-bottom: 3%; }
+  .aboutUS h2 {
+    color: #fff; }
+  .aboutUS .aboutUs_scrollspy {
+    width: 90%;
+    margin: 0 auto;
+    display: flex; }
+    .aboutUS .aboutUs_scrollspy .list-group {
+      flex: 23%;
+      margin: 0 1%; }
+      @media (max-width: 780px) {
+        .aboutUS .aboutUs_scrollspy .list-group {
+          text-align: center;
+          margin-bottom: 3%; } }
+      .aboutUS .aboutUs_scrollspy .list-group .list-group-item.active {
+        background: #05333a;
+        border-color: #05333a; }
+      .aboutUS .aboutUs_scrollspy .list-group .list-group-item:hover {
+        background: #17a2b8;
+        border-color: #17a2b8;
+        color: #fff; }
+    .aboutUS .aboutUs_scrollspy .scrollspy-example {
+      position: relative;
+      flex: 75%;
+      padding: 0 1%;
+      overflow-y: scroll;
+      height: 40vh;
+      background: #212529;
+      color: #fff;
+      text-align: justify; }
+      @media (max-width: 780px) {
+        .aboutUS .aboutUs_scrollspy .scrollspy-example {
+          flex: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
