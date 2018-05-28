@@ -177,8 +177,7 @@ section {
       overflow-y: scroll;
       height: 40vh;
       background: #212529;
-      color: #fff;
-      text-align: justify; }
+      color: #fff; }
       @media (max-width: 780px) {
         .aboutUS .aboutUs_scrollspy .scrollspy-example {
           flex: 100%; } }
@@ -206,38 +205,86 @@ section {
         filter: brightness(80%) contrast(120%) grayscale(10%); }
       .products .products_row .card p {
         line-height: 1.2; }
-  .products .carousel {
-    height: 55vh; }
-    @media (max-width: 1400px) {
-      .products .carousel {
-        height: 70vh; } }
-    .products .carousel .container {
-      height: inherit; }
-      .products .carousel .container .row {
-        width: 90%;
-        margin: 0 auto; }
-        .products .carousel .container .row img {
-          width: 100%;
-          height: 40vh;
-          object-fit: cover;
-          border: 1px solid #17a2b8;
-          padding: 4px;
-          border-radius: 0 10px 0 10px; }
-          @media (max-width: 992px) {
-            .products .carousel .container .row img {
-              display: none; } }
-        .products .carousel .container .row .badge {
-          animation: shake-lr 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
-        .products .carousel .container .row p {
-          text-align: justify; }
-        @media (max-width: 1400px) {
-          .products .carousel .container .row .col-xl-4, .products .carousel .container .row .col-xl-8 {
-            flex: 50%;
-            max-width: 50%;
-            padding: 3%; } }
+  .products .carousel .container {
+    height: inherit; }
+    .products .carousel .container .row {
+      width: 90%;
+      margin: 0 auto; }
+      .products .carousel .container .row img {
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+        border: 1px solid #17a2b8;
+        padding: 4px;
+        border-radius: 0 10px 0 10px; }
         @media (max-width: 992px) {
-          .products .carousel .container .row .col-xl-4, .products .carousel .container .row .col-xl-8 {
-            flex: 100%;
-            max-width: 100%; } }
+          .products .carousel .container .row img {
+            display: none; } }
+      .products .carousel .container .row .badge {
+        animation: shake-lr 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
+      .products .carousel .container .row p {
+        text-align: justify; }
+      @media (max-width: 1400px) {
+        .products .carousel .container .row .col-xl-4, .products .carousel .container .row .col-xl-8 {
+          flex: 50%;
+          max-width: 50%;
+          padding: 3%; } }
+      @media (max-width: 992px) {
+        .products .carousel .container .row .col-xl-4, .products .carousel .container .row .col-xl-8 {
+          flex: 100%;
+          max-width: 100%; } }
+
+/* --GALLERY-- */
+.gallery {
+  background-color: #212529;
+  padding-bottom: 1%; }
+  .gallery h2 {
+    color: #fff;
+    transition: 0.4s; }
+  .gallery .img-1 {
+    background-image: url(https://images.pexels.com/photos/91413/pexels-photo-91413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); }
+  .gallery .img-2 {
+    background-image: url(https://images.pexels.com/photos/208560/pexels-photo-208560.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); }
+  .gallery .img-3 {
+    background-image: url(https://images.pexels.com/photos/851305/pexels-photo-851305.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); }
+  .gallery .img-4 {
+    background-image: url(https://images.pexels.com/photos/1346/blue-abstract-balls-spheres.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); }
+  .gallery .img-5 {
+    background-image: url(https://images.pexels.com/photos/845242/pexels-photo-845242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); }
+  .gallery .img-6 {
+    background-image: url(https://images.pexels.com/photos/207305/pexels-photo-207305.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); }
+  .gallery .img-7 {
+    background-image: url(https://images.pexels.com/photos/165600/pexels-photo-165600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); }
+  .gallery .img-8 {
+    background-image: url(https://images.pexels.com/photos/414551/pexels-photo-414551.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); }
+  .gallery .img-9 {
+    background-image: url(https://images.pexels.com/photos/417278/pexels-photo-417278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); }
+  .gallery .img-10 {
+    background-image: url(https://images.pexels.com/photos/615670/pexels-photo-615670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); }
+  .gallery .img-11 {
+    background-image: url(https://images.pexels.com/photos/458983/pexels-photo-458983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); }
+  .gallery .img-12 {
+    background-image: url(https://images.pexels.com/photos/417350/pexels-photo-417350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); }
+  .gallery .element {
+    height: 20vh;
+    margin: 5px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    transition: 0.4s; }
+  .gallery .inside-container-gallery, .gallery .flex-column-gallery, .gallery .flex-row-gallery {
+    display: flex;
+    flex-wrap: wrap; }
+  .gallery .flex-column-gallery {
+    flex-direction: column; }
+  .gallery .flex-1 {
+    flex: 1; }
+  .gallery .element-big {
+    height: 40vh; }
+  .gallery:hover .element {
+    opacity: 0.3; }
+  .gallery .element:hover {
+    opacity: 1;
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

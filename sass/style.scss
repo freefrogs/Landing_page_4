@@ -230,7 +230,6 @@ section {
 			height: 40vh;
 			background: $dark_background;
 			color: $white;
-			text-align: justify;
 			@media (max-width: 780px) {
 				flex: 100%;
 			}
@@ -269,15 +268,12 @@ section {
 		}
 	}
 	.carousel {
-		height: 55vh;
-		@media (max-width: 1400px) {
-			height: 70vh;
-		}
 		.container {
 			height: inherit;
 			.row {
 				width: 90%;
 				margin: 0 auto;
+
 				img {
 					width: 100%;
 					height: 40vh;
@@ -310,4 +306,54 @@ section {
 		}
 	}
 }
+/* --GALLERY-- */
 
+.gallery {
+	background-color: $dark_background;
+	padding-bottom: 1%;
+
+	h2 {
+		color: $white;
+		transition: 0.4s;
+	}
+	.img-1 {background-image: url(https://images.pexels.com/photos/91413/pexels-photo-91413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);}
+	.img-2 {background-image: url(https://images.pexels.com/photos/208560/pexels-photo-208560.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);}
+	.img-3 {background-image: url(https://images.pexels.com/photos/851305/pexels-photo-851305.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);}
+	.img-4 {background-image: url(https://images.pexels.com/photos/1346/blue-abstract-balls-spheres.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);}
+	.img-5 {background-image: url(https://images.pexels.com/photos/845242/pexels-photo-845242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);}
+	.img-6 {background-image: url(https://images.pexels.com/photos/207305/pexels-photo-207305.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);}
+	.img-7 {background-image: url(https://images.pexels.com/photos/165600/pexels-photo-165600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);}
+	.img-8 {background-image: url(https://images.pexels.com/photos/414551/pexels-photo-414551.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);}
+	.img-9 {background-image: url(https://images.pexels.com/photos/417278/pexels-photo-417278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);}
+	.img-10 {background-image: url(https://images.pexels.com/photos/615670/pexels-photo-615670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);}
+	.img-11 {background-image: url(https://images.pexels.com/photos/458983/pexels-photo-458983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);}
+	.img-12 {background-image: url(https://images.pexels.com/photos/417350/pexels-photo-417350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);}
+	.element {
+		height: 20vh;
+		margin: 5px;
+		border-radius: 5px;
+		background-position: center;
+		background-size: cover;
+		transition: 0.4s;
+	}
+	.inside-container-gallery, .flex-column-gallery, .flex-row-gallery {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.flex-column-gallery {
+		flex-direction: column;
+	}
+	.flex-1 {
+		flex: 1;
+	}
+	.element-big {
+		height: 40vh;
+	}
+	&:hover .element{
+		opacity: 0.3;
+	}
+	.element:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+}
