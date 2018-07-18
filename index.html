@@ -21,27 +21,27 @@
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#nav">Home<span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#aboutUS">About us</a>
+						<a class="nav-link" href="#nav_aboutUS">About us</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#products">Products</a>
+						<a class="nav-link" href="#nav_products">Products</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#gallery">Gallery</a>
+						<a class="nav-link" href="#nav_gallery">Gallery</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Read more</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#ourTeam">Our team</a>
-							<a class="dropdown-item" href="#numbers">Numbers</a>
-							<a class="dropdown-item" href="#brands">Brands</a>
+							<a class="dropdown-item" href="#nav_ourTeam">Our team</a>
+							<a class="dropdown-item" href="#nav_numbers">Numbers</a>
+							<a class="dropdown-item" href="#nav_brands">Brands</a>
 						</div>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
+						<a class="nav-link" href="#nav_contact">Contact</a>
 					</li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
@@ -100,7 +100,7 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
-		<section class="aboutUS" id="aboutUS">
+		<section class="aboutUS" id="nav_aboutUS">
 			<h2>about us</h2>
 			<div class="aboutUs_scrollspy row">
 				<div id="list-example" class="list-group">
@@ -124,7 +124,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="products" id="products">
+		<section class="products" id="nav_products">
 			<h2>products</h2>
 			<div class="box">
 				<div class="row products_row">
@@ -267,37 +267,62 @@
 				</div>
 			</div>
 		</section>
-		<section class="gallery" id="gallery">
+		<section class="gallery" id="nav_gallery">
 			<div class="box">
 				<h2>gallery</h2>
 				<div class="flex-row-gallery">
-					<div class="element flex-1 img-1"></div>
-					<div class="element flex-1 img-2"></div>
-					<div class="element flex-1 img-3"></div>
+					<div class="element flex-1">
+						<img class="img_lightbox" src="https://images.pexels.com/photos/91413/pexels-photo-91413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="gallery">
+					</div>
+					<div class="element flex-1">
+						<img class="img_lightbox" src="https://images.pexels.com/photos/208560/pexels-photo-208560.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="gallery">
+					</div>
+					<div class="element flex-1">
+						<img class="img_lightbox" src="https://images.pexels.com/photos/851305/pexels-photo-851305.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="gallery">
+					</div>
 				</div>
 				<div class="inside-container-gallery">
 					<div class="flex-column-gallery flex-1">
-						<div class="element flex-1 img-4"></div>
-						<div class="element flex-1 img-5"></div>
+						<div class="element flex-1">
+							<img class="img_lightbox" src="https://images.pexels.com/photos/1346/blue-abstract-balls-spheres.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="gallery">
+						</div>
+						<div class="element flex-1">
+							<img class="img_lightbox" src="https://images.pexels.com/photos/845242/pexels-photo-845242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="gallery">
+						</div>
 					</div>
 					<div class="flex-column-gallery flex-1">
-						<div class="element img-6"></div>
-						<div class="element element-big img-7"></div>
-						<div class="element img-8"></div>
+						<div class="element">
+							<img class="img_lightbox" src="https://images.pexels.com/photos/207305/pexels-photo-207305.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="gallery">
+						</div>
+						<div class="element element-big">
+							<img class="img_lightbox" src="https://images.pexels.com/photos/165600/pexels-photo-165600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="gallery">
+						</div>
+						<div class="element">
+							<img class="img_lightbox" src="https://images.pexels.com/photos/414551/pexels-photo-414551.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="gallery">
+						</div>
 					</div>
 					<div class="flex-column-gallery flex-1">
-						<div class="element flex-1 img-9"></div>
-						<div class="element flex-1 img-10"></div>
+						<div class="element flex-1">
+							<img class="img_lightbox" src="https://images.pexels.com/photos/417278/pexels-photo-417278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="gallery">
+						</div>
+						<div class="element flex-1">
+							<img class="img_lightbox" src="https://images.pexels.com/photos/615670/pexels-photo-615670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="gallery">
+						</div>
 					</div>
 				</div>
 				<div class="flex-row-gallery">
-					<div class="element flex-1 img-11"></div>
-					<div class="element flex-1 img-12"></div>
+					<div class="element flex-1">
+						<img class="img_lightbox" src="https://images.pexels.com/photos/458983/pexels-photo-458983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="gallery">
+					</div>
+					<div class="element flex-1">
+						<img class="img_lightbox" src="https://images.pexels.com/photos/417350/pexels-photo-417350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="gallery">
+					</div>
 				</div>
 			</div>
 		</section>
-
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 		<script src="js/script.js"></script>

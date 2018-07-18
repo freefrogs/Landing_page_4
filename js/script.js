@@ -1,1 +1,21 @@
-$('.scrollspy-example').scrollspy({ target: '#list-example' });
+//$(document).ready(function() 
+$(function() {
+	//Scroll to ID
+	$('a[href^="#nav"]').on('click', function (e) {
+		e.preventDefault();
+		$('html, body').animate({scrollTop: $($(this).attr('href')).offset().top}, 1000);
+	});
+
+	//LIGHTBOX
+	$('.img_lightbox').click(function() {
+		var $src = $(this).attr('src');
+		var image = $("<div id='lightbox'><img src=''></div>");
+		$('body').append(image);
+		$('#lightbox').show();
+		$('#lightbox img').attr('src', $src);
+	});
+	$('body').on('click', '#lightbox', function() {
+		$('#lightbox').remove();
+	});
+	
+});
