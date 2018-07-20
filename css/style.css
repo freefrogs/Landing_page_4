@@ -34,6 +34,11 @@
     transform: scale3d(1.05, 0.95, 1); }
   100% {
     transform: scale3d(1, 1, 1); } }
+@keyframes flip-diagonal-2-fwd {
+  0% {
+    transform: translateZ(0) rotate3d(-1, 1, 0, 0deg); }
+  100% {
+    transform: translateZ(160px) rotate3d(-1, 1, 0, 360deg); } }
 .info_button {
   background: rgba(255, 255, 255, 0.7);
   border-color: #17a2b8;
@@ -182,9 +187,15 @@ section {
 .products {
   background: linear-gradient(113deg, #e6e6e6 27%, #717171 98%); }
   .products .products_row {
-    padding-bottom: 3%;
+    padding-bottom: 2px;
     margin-bottom: 3%;
-    border-bottom: 2px solid #212529; }
+    border-bottom: 2px solid #17a2b8; }
+    .products .products_row:after {
+      content: '';
+      width: 90%;
+      height: 2px;
+      background: #17a2b8;
+      margin: 2% auto 0; }
     .products .products_row .card {
       text-align: center;
       transition: 0.6s; }
@@ -300,5 +311,54 @@ section {
       #lightbox img {
         max-width: 95%;
         max-height: 95%; } }
+
+/* --READ MORE-- */
+.readMore {
+  background: linear-gradient(113deg, #e6e6e6 27%, #717171 98%); }
+  .readMore .ourTeam {
+    padding-bottom: 3%; }
+    .readMore .ourTeam .img-fluid {
+      height: 40vh;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 0 10px 0 10px;
+      border: 1px solid #17a2b8;
+      padding: 5px;
+      margin-bottom: 2%; }
+    .readMore .ourTeam p {
+      margin: 0; }
+    .readMore .ourTeam .div-icon {
+      margin: 2% 2% 4%; }
+      .readMore .ourTeam .div-icon .fa_icon {
+        display: inline-block;
+        color: #fff;
+        background: #17a2b8;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        font-size: 14px; }
+        @media (max-width: 992px) {
+          .readMore .ourTeam .div-icon .fa_icon {
+            width: 25px;
+            height: 25px;
+            line-height: 25px; } }
+        .readMore .ourTeam .div-icon .fa_icon:hover {
+          animation: flip-diagonal-2-fwd 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
+    .readMore .ourTeam [class^="col-"] {
+      border: 1px solid #17a2b8;
+      padding: 10px;
+      margin: 1%;
+      border-radius: 5px;
+      max-width: 31.33%; }
+      @media (max-width: 780px) {
+        .readMore .ourTeam [class^="col-"] {
+          max-width: 94%; } }
+      .readMore .ourTeam [class^="col-"]:hover {
+        box-shadow: inset 0px 0px 20px 0px #17a2b8; }
+      .readMore .ourTeam [class^="col-"]:hover img {
+        filter: saturate(200%); }
+      .readMore .ourTeam [class^="col-"]:hover .info_button {
+        animation: jello-horizontal 1s both; }
 
 /*# sourceMappingURL=style.css.map */

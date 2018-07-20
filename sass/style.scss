@@ -5,6 +5,7 @@ $info_blue: #17a2b8;
 $dark_info_blue: #05333a;
 $dark_background: #212529;
 $info_grey: #525c66;
+$background_gradient: linear-gradient(113deg, rgba(230, 230, 230,1) 27%,rgba(113, 113, 113,1) 98%);
 //media sizes
 $xl: 1400px;
 $l: 1200px;
@@ -64,6 +65,16 @@ $xs: 450px;
 		transform: scale3d(1, 1, 1);
 	}
 }
+
+@keyframes flip-diagonal-2-fwd {
+	0% {
+		transform: translateZ(0) rotate3d(-1, 1, 0, 0deg);
+	}
+	100% {
+		transform: translateZ(160px) rotate3d(-1, 1, 0, 360deg);
+	}
+}
+
 
 .info_button {
 	background: rgba(255,255,255,0.7);
@@ -241,11 +252,18 @@ section {
 
 /*--PRODUCTS--*/
 .products {
-	background: linear-gradient(113deg, rgba(230, 230, 230,1) 27%,rgba(113, 113, 113,1) 98%);
+	background: $background_gradient;
 	.products_row {
-		padding-bottom: 3%;
+		padding-bottom: 2px;
 		margin-bottom: 3%;
-		border-bottom: 2px solid $dark_background;
+		border-bottom: 2px solid $info_blue;
+		&:after {
+			content: '';
+			width: 90%;
+			height: 2px;
+			background: $info_blue;
+			margin: 2% auto 0;
+		}
 		.card {
 			text-align: center;
 			transition: 0.6s;
@@ -388,6 +406,66 @@ section {
 		@media (max-width: $s) {
 			max-width: 95%;
 			max-height: 95%;
+		}
+	}
+}
+/* --READ MORE-- */
+.readMore {
+	background: $background_gradient;
+	// OUR TEAM
+	.ourTeam {
+		padding-bottom: 3%;
+		.img-fluid {
+			height: 40vh;
+			width: 100%;
+			object-fit: cover;
+			border-radius: 0 10px 0 10px;
+			border: 1px solid $info_blue;
+			padding: 5px;
+			margin-bottom: 2%;
+		}
+		p {
+			margin: 0;
+		}
+		.div-icon {
+			margin: 2% 2% 4%;
+			.fa_icon {
+				display: inline-block;
+				color: $white;
+				background: $info_blue;
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				border-radius: 50%;
+				font-size: 14px;
+				@media (max-width: $m) {
+					width: 25px;
+					height: 25px;
+					line-height: 25px;
+				}
+				&:hover {
+					animation: flip-diagonal-2-fwd 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+				}
+			}
+		}
+		[class^="col-"] {
+			border: 1px solid $info_blue;
+			padding: 10px;
+			margin: 1%;
+			border-radius: 5px;
+			max-width: 31.33%;
+			@media (max-width: $s) {
+				max-width: 94%;
+			}
+			&:hover {
+				box-shadow: inset 0px 0px 20px 0px $info_blue;
+			}
+			&:hover img {
+				filter: saturate(200%);
+			}
+			&:hover .info_button {
+				animation: jello-horizontal 1s both;
+			}
 		}
 	}
 }

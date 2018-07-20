@@ -6,7 +6,7 @@ $(function() {
 		$('html, body').animate({scrollTop: $($(this).attr('href')).offset().top}, 1000);
 	});
 
-	//LIGHTBOX
+	//Lightbox
 	$('.img_lightbox').click(function() {
 		var $src = $(this).attr('src');
 		var image = $("<div id='lightbox'><img src=''></div>");
@@ -17,5 +17,8 @@ $(function() {
 	$('body').on('click', '#lightbox', function() {
 		$('#lightbox').remove();
 	});
-	
+	//Tooltips initialized
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	});
 });
