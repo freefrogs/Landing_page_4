@@ -468,4 +468,89 @@ section {
 			}
 		}
 	}
+	//NUMBERS
+	.numbers {
+		.row {
+			padding-bottom: 2%;
+			.number {
+				position: relative;
+				height: 25vh;
+				@media (max-width: $xl) {
+					max-width: 33.33%;
+					flex: 33.33%;
+					margin-bottom: 3%;
+				}
+				@media (max-width: $m) {
+					max-width: 50%;
+					flex: 50%;
+				}
+				@media (max-width: $xs) {
+					max-width: 100%;
+					flex: 100%;
+				}
+				&:hover p:nth-child(2) {
+					animation: shake-lr 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+				}
+				.div_90 {
+					position: absolute;
+					width: 20vh;
+					left: 0;
+					bottom: 25%;
+					transform: rotate(-80deg);
+					text-align: center;
+					@media (max-width: $xl) {
+						left: 10%;
+					}
+					@media (max-width: $m) {
+						left: 15%;
+					}
+					p {
+						margin: 0;
+						padding: 0;
+						font-weight: bold;
+						&:first-child {
+							font-size: 34px;
+							color: $dark_info_blue;
+						}
+						&:nth-child(2) {
+							font-size: 14px;
+						}
+					}
+					.last_number {
+						transform: rotate(90deg) scale(2);
+						display: inline-block;
+					}
+				}
+				.icon_numbers {
+					position: absolute;
+					right: 0;
+					top: 10%;
+					transform: rotate(10deg);
+					width: 50%;
+					border-right: 2px solid $info_blue;
+					padding-right: 5px;
+					@media (max-width: $xl) {
+						width: 35%;
+						right: 20%;
+						border-right: none;
+					}
+					@media (max-width: $m) {
+						width: 30%;
+						right: 25%;
+					}
+					@media (max-width: $s) {
+						width: 35%;
+						right: 10%;
+					}
+					@media (max-width: 550px) {
+						right: 2%;
+					}
+					@media (max-width: $xs) {
+						right: 15%;
+					}
+				}
+			}
+		}
+	}
+
 }

@@ -360,5 +360,77 @@ section {
         filter: saturate(200%); }
       .readMore .ourTeam [class^="col-"]:hover .info_button {
         animation: jello-horizontal 1s both; }
+  .readMore .numbers .row {
+    padding-bottom: 2%; }
+    .readMore .numbers .row .number {
+      position: relative;
+      height: 25vh; }
+      @media (max-width: 1400px) {
+        .readMore .numbers .row .number {
+          max-width: 33.33%;
+          flex: 33.33%;
+          margin-bottom: 3%; } }
+      @media (max-width: 992px) {
+        .readMore .numbers .row .number {
+          max-width: 50%;
+          flex: 50%; } }
+      @media (max-width: 450px) {
+        .readMore .numbers .row .number {
+          max-width: 100%;
+          flex: 100%; } }
+      .readMore .numbers .row .number:hover p:nth-child(2) {
+        animation: shake-lr 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both; }
+      .readMore .numbers .row .number .div_90 {
+        position: absolute;
+        width: 20vh;
+        left: 0;
+        bottom: 25%;
+        transform: rotate(-80deg);
+        text-align: center; }
+        @media (max-width: 1400px) {
+          .readMore .numbers .row .number .div_90 {
+            left: 10%; } }
+        @media (max-width: 992px) {
+          .readMore .numbers .row .number .div_90 {
+            left: 15%; } }
+        .readMore .numbers .row .number .div_90 p {
+          margin: 0;
+          padding: 0;
+          font-weight: bold; }
+          .readMore .numbers .row .number .div_90 p:first-child {
+            font-size: 34px;
+            color: #05333a; }
+          .readMore .numbers .row .number .div_90 p:nth-child(2) {
+            font-size: 14px; }
+        .readMore .numbers .row .number .div_90 .last_number {
+          transform: rotate(90deg) scale(2);
+          display: inline-block; }
+      .readMore .numbers .row .number .icon_numbers {
+        position: absolute;
+        right: 0;
+        top: 10%;
+        transform: rotate(10deg);
+        width: 50%;
+        border-right: 2px solid #17a2b8;
+        padding-right: 5px; }
+        @media (max-width: 1400px) {
+          .readMore .numbers .row .number .icon_numbers {
+            width: 35%;
+            right: 20%;
+            border-right: none; } }
+        @media (max-width: 992px) {
+          .readMore .numbers .row .number .icon_numbers {
+            width: 30%;
+            right: 25%; } }
+        @media (max-width: 780px) {
+          .readMore .numbers .row .number .icon_numbers {
+            width: 35%;
+            right: 10%; } }
+        @media (max-width: 550px) {
+          .readMore .numbers .row .number .icon_numbers {
+            right: 2%; } }
+        @media (max-width: 450px) {
+          .readMore .numbers .row .number .icon_numbers {
+            right: 15%; } }
 
 /*# sourceMappingURL=style.css.map */
