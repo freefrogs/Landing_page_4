@@ -498,6 +498,9 @@ section {
 					bottom: 25%;
 					transform: rotate(-80deg);
 					text-align: center;
+					@media (min-width: 1800px) {
+						left: -10%;
+					}
 					@media (max-width: $xl) {
 						left: 10%;
 					}
@@ -529,6 +532,9 @@ section {
 					width: 50%;
 					border-right: 2px solid $info_blue;
 					padding-right: 5px;
+					@media (min-width: 1800px) {
+						top: 30%;
+					}
 					@media (max-width: $xl) {
 						width: 35%;
 						right: 20%;
