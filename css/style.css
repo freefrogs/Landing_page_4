@@ -403,6 +403,9 @@ section {
           .readMore .numbers .row .number .div_90 p:first-child {
             font-size: 34px;
             color: #05333a; }
+            @media (max-width: 1400px) {
+              .readMore .numbers .row .number .div_90 p:first-child {
+                color: #17a2b8; } }
           .readMore .numbers .row .number .div_90 p:nth-child(2) {
             font-size: 14px; }
         .readMore .numbers .row .number .div_90 .last_number {
@@ -438,5 +441,35 @@ section {
         @media (max-width: 450px) {
           .readMore .numbers .row .number .icon_numbers {
             right: 15%; } }
+
+/* --BRAND-- */
+.brands {
+  background: #212529;
+  padding-bottom: 2%; }
+  .brands h2 {
+    color: #fff; }
+  .brands .row {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 2%; }
+    .brands .row:hover .icon_brands {
+      box-shadow: 0 0 10px 2px #fff;
+      animation: flip-diagonal-2-fwd 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
+    .brands .row .icon_brands {
+      max-width: 18%;
+      flex: 1;
+      padding: 2%;
+      border-radius: 10%;
+      border-top: 4px double #fff;
+      border-bottom: 4px double #fff;
+      margin: 2%; }
+      @media (max-width: 992px) {
+        .brands .row .icon_brands {
+          max-width: 36%; } }
+      @media (max-width: 450px) {
+        .brands .row .icon_brands {
+          max-width: 72%; } }
 
 /*# sourceMappingURL=style.css.map */

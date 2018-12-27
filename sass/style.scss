@@ -514,6 +514,9 @@ section {
 						&:first-child {
 							font-size: 34px;
 							color: $dark_info_blue;
+							@media (max-width: $xl) {
+								color: $info_blue;
+							}
 						}
 						&:nth-child(2) {
 							font-size: 14px;
@@ -558,5 +561,38 @@ section {
 			}
 		}
 	}
-
+}
+/* --BRAND-- */
+.brands {
+	background: $dark_background;
+	padding-bottom: 2%;
+	h2 {
+		color: $white;
+	}
+	.row {
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		&:hover .icon_brands {
+			box-shadow: 0 0 10px 2px $white;
+			animation: flip-diagonal-2-fwd 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+		}
+		.icon_brands {
+			max-width: 18%;
+			flex: 1;
+			padding: 2%;
+			border-radius: 10%;
+			border-top: 4px double $white;
+			border-bottom: 4px double $white;
+			margin: 2%;
+			@media (max-width: $m) {
+				max-width: 36%;
+			}
+			@media (max-width: $xs) {
+				max-width: 72%;
+			}
+		}
+	}
 }
