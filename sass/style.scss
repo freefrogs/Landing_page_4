@@ -691,3 +691,17 @@ section {
 		}
 	}		
 }
+
+/* --FOOTER-- */
+
+footer {
+	background: $dark_background;
+	color: $white;
+	text-align: center;
+	p {
+		font-size: 18px;
+		line-height: 18px;
+		padding: 2% 0;
+		margin: 0;
+	}
+}
