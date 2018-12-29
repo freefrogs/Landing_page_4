@@ -1,4 +1,5 @@
 /*--GENERAL--*/
+
 $white: #fff;
 $black: #000;
 $info_blue: #17a2b8;
@@ -6,6 +7,7 @@ $dark_info_blue: #05333a;
 $dark_background: #212529;
 $info_grey: #525c66;
 $background_gradient: linear-gradient(113deg, rgba(230, 230, 230,1) 27%,rgba(113, 113, 113,1) 98%);
+
 //media sizes
 $xl: 1400px;
 $l: 1200px;
@@ -87,6 +89,27 @@ $xs: 450px;
 	}
 }
 
+.div-icon {
+	.fa_icon {
+		display: inline-block;
+		color: $white;
+		background: $info_blue;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		border-radius: 50%;
+		font-size: 14px;
+		@media (max-width: $m) {
+			width: 25px;
+			height: 25px;
+			line-height: 25px;
+		}
+		&:hover {
+			animation: flip-diagonal-2-fwd 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+		}
+	}
+}
+
 h2 {
 	padding: 1%;
 	margin-bottom: 1%;
@@ -121,6 +144,7 @@ section {
 }
 
 /*--CLEARFIX--*/
+
 .row::before,
 .row::after {
 	content: "";
@@ -129,6 +153,7 @@ section {
 }
 
 /*--NAVBAR--*/
+
 .navbar {
 	max-width: 1600px;
 	margin: 0 auto;
@@ -167,6 +192,7 @@ section {
 }
 
 /*--HEADER CAROUSEL--*/
+
 .carousel {
 	max-width: 1600px;
 	margin: 0 auto;
@@ -210,6 +236,7 @@ section {
 }
 
 /*--ABOUT US--*/
+
 .aboutUS {
 	background: $dark_background;
 	padding-bottom: 3%;
@@ -253,6 +280,7 @@ section {
 }
 
 /*--PRODUCTS--*/
+
 .products {
 	background: $background_gradient;
 	.products_row {
@@ -329,6 +357,7 @@ section {
 		}
 	}
 }
+
 /* --GALLERY-- */
 
 .gallery {
@@ -411,9 +440,12 @@ section {
 		}
 	}
 }
+
 /* --READ MORE-- */
+
 .readMore {
 	background: $background_gradient;
+
 	// OUR TEAM
 	.ourTeam {
 		padding-bottom: 3%;
@@ -431,24 +463,6 @@ section {
 		}
 		.div-icon {
 			margin: 2% 2% 4%;
-			.fa_icon {
-				display: inline-block;
-				color: $white;
-				background: $info_blue;
-				width: 30px;
-				height: 30px;
-				line-height: 30px;
-				border-radius: 50%;
-				font-size: 14px;
-				@media (max-width: $m) {
-					width: 25px;
-					height: 25px;
-					line-height: 25px;
-				}
-				&:hover {
-					animation: flip-diagonal-2-fwd 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-				}
-			}
 		}
 		[class^="col-"] {
 			border: 1px solid $info_blue;
@@ -470,6 +484,7 @@ section {
 			}
 		}
 	}
+
 	//NUMBERS
 	.numbers {
 		.row {
@@ -564,6 +579,7 @@ section {
 		}
 	}
 }
+
 //BRAND
 .brands {
 	background: $dark_background;
@@ -598,13 +614,15 @@ section {
 		}
 	}
 }
+
 /* --CONTACT-- */
+
 .contact {
 	background: $background_gradient;
-	padding-bottom: 1%;
+	padding-bottom: 3%;
 	form {
 		margin: 2% auto;
-		width: 50%;
+		width: 70%;
 		text-transform: uppercase;
 		font-size: 13px;
 		.row {
@@ -650,4 +668,26 @@ section {
 			}
 		}
 	}
+	.contact-data {
+		margin-top: 2%;
+		padding: 2%;
+		margin-bottom: 2%;
+		font-size: 13px;
+		background: $dark_background;
+		color: $white;
+		box-shadow: 0 0 10px 2px $white;
+		border-radius: 5%;
+		table tr td:first-child {
+			font-weight: bold;
+			padding-right: 15px;
+			vertical-align: top;
+		}
+		.div-icon {
+			margin-top: 5%;
+			.fa_icon {
+				text-align: center;
+				margin-right: 5px;
+			}
+		}
+	}		
 }
