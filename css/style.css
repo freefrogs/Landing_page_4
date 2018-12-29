@@ -50,6 +50,7 @@
 
 h2 {
   padding: 1%;
+  margin-bottom: 1%;
   text-transform: uppercase;
   text-decoration: underline;
   text-align: center;
@@ -57,7 +58,8 @@ h2 {
 
 section {
   max-width: 1600px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 2% 0; }
 
 .box {
   width: 90%;
@@ -442,7 +444,6 @@ section {
           .readMore .numbers .row .number .icon_numbers {
             right: 15%; } }
 
-/* --BRAND-- */
 .brands {
   background: #212529;
   padding-bottom: 2%; }
@@ -471,5 +472,45 @@ section {
       @media (max-width: 450px) {
         .brands .row .icon_brands {
           max-width: 72%; } }
+
+/* --CONTACT-- */
+.contact {
+  background: linear-gradient(113deg, #e6e6e6 27%, #717171 98%);
+  padding-bottom: 1%; }
+  .contact form {
+    margin: 2% auto;
+    width: 50%;
+    text-transform: uppercase;
+    font-size: 13px; }
+    .contact form .row {
+      margin-bottom: 20px; }
+    .contact form .info_button {
+      display: block;
+      margin: 10px auto; }
+      .contact form .info_button:hover {
+        animation: jello-horizontal 1s both; }
+    .contact form input, .contact form textarea, .contact form select {
+      border: none;
+      border-bottom: 2px solid #000;
+      background: inherit; }
+      .contact form input::placeholder, .contact form textarea::placeholder, .contact form select::placeholder {
+        font-size: 13px;
+        text-transform: uppercase; }
+      .contact form input:focus, .contact form textarea:focus, .contact form select:focus {
+        background: #212529;
+        color: #fff;
+        outline: 0;
+        box-shadow: none;
+        font-size: 13px;
+        line-height: 1.9; }
+        .contact form input:focus::placeholder, .contact form textarea:focus::placeholder, .contact form select:focus::placeholder {
+          color: #fff; }
+    .contact form textarea {
+      resize: none; }
+    .contact form select {
+      font-size: 13px; }
+      .contact form select option {
+        background: #212529;
+        color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
