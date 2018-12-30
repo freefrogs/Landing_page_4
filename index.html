@@ -135,7 +135,7 @@
 							<div class="card-body">
 								<h5 class="card-title">Product 1</h5>
 								<p class="card-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
-								<a href="#" class="btn btn-info info_button">BUY now</a>
+								<a href="#" class="btn btn-info info_button" data-toggle="modal" data-target="#myModal">BUY now</a>
 							</div>
 						</div>
 					</div>
@@ -145,7 +145,7 @@
 							<div class="card-body">
 								<h5 class="card-title">Product 2</h5>
 								<p class="card-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
-								<a href="#" class="btn btn-info info_button">BUY now</a>
+								<a href="#" class="btn btn-info info_button" data-toggle="modal" data-target="#myModal">BUY now</a>
 							</div>
 						</div>
 					</div>
@@ -155,7 +155,7 @@
 							<div class="card-body">
 								<h5 class="card-title">Product 3</h5>
 								<p class="card-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
-								<a href="#" class="btn btn-info info_button">BUY now</a>
+								<a href="#" class="btn btn-info info_button" data-toggle="modal" data-target="#myModal">BUY now</a>
 							</div>
 						</div>
 					</div>
@@ -165,7 +165,7 @@
 							<div class="card-body">
 								<h5 class="card-title">Product 4</h5>
 								<p class="card-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
-								<a href="#" class="btn btn-info info_button">BUY now</a>
+								<a href="#" class="btn btn-info info_button" data-toggle="modal" data-target="#myModal">BUY now</a>
 							</div>
 						</div>
 					</div>
@@ -268,6 +268,57 @@
 				</div>
 			</div>
 		</section>
+		<!-- MODAL -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalTitle">Please complete fallowing data</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="row">
+								<div class="col">
+									<input type="text" class="form-control" placeholder="First name">
+								</div>
+								<div class="col">
+									<input type="text" class="form-control" placeholder="Last name">
+								</div>
+							</div><br>
+							<input type="text" class="form-control" placeholder="Address"><br>
+							<div class="row">
+								<div class="col">
+									<input type="text" class="form-control" placeholder="City">
+								</div>
+								<div class="col">
+									<input type="text" class="form-control" placeholder="Zip code">
+								</div>
+							</div><br>
+							<div class="form-group">
+								<label for="EmailBuy">Your email</label>
+								<input type="email" class="form-control" id="EmailBuy" aria-describedby="emailHelp" placeholder="Enter email">
+							</div>
+							<div class="form-group">
+								<label for="add-comment" class="col-form-label">Additional comments</label>
+								<textarea class="form-control" id="add-comment"></textarea>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="Check3">
+								<label class="form-check-label" for="Check3">I accept the <a href="#">terms and conditions</a></label>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary info_button" data-dismiss="modal">Cancle</button>
+						<button type="submit" class="btn btn-primary info_button" data-dismiss="modal">Buy</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<section class="gallery" id="nav_gallery">
 			<div class="box">
 				<h2>gallery</h2>
