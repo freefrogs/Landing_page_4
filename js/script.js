@@ -17,6 +17,7 @@ $(function() {
 	$('body').on('click', '#lightbox', function() {
 		$('#lightbox').remove();
 	});
+	
 	//Tooltips initialized
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip()
