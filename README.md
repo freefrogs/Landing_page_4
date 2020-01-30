@@ -10,7 +10,7 @@ Learning Boostrap v.4, components used in the project:
 * Modal,
 * Tooltip.
 
-**See view** at :sunny: [GitHub Pages](https://freefrogs.github.io/landing_page_4/)
+**See view** at :sunny: [GitHub Pages](https://freefrogs.github.io/Landing_page_4/)
 
 ### Used technologies:
 * HTML
