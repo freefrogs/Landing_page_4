@@ -40,7 +40,7 @@
     "glob-run": "^0.1.6",
     "jshint": "^2.9.5",
     "jslint": "^0.11.0",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^0.5.6",
     "node-sass": "^4.7.2",
     "nu-html-checker": "^0.1.0",
     "onchange": "^3.3.0",
