@@ -36,7 +36,7 @@
   "homepage": "https://github.com/freefrogs/PORTFOLIO_5#readme",
   "dependencies": {
     "autoprefixer-cli": "^1.0.0",
-    "browser-sync": "^2.19.0",
+    "browser-sync": "^2.29.1",
     "glob-run": "^0.1.6",
     "jshint": "^2.9.5",
     "jslint": "^0.11.0",
